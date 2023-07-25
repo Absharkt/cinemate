@@ -1,0 +1,32 @@
+/* Custom styles for the comment UI */
+.container {
+    padding-top: 20px;
+  }
+  
+  .comment {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .comment-username {
+    font-weight: bold;
+  }
+  
+  .comment-time {
+    color: #888;
+  }
+  
+  .comment-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

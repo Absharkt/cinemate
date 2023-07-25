@@ -1,0 +1,16 @@
+.card {
+    font-size: 0.8rem;
+}
+
+.card p{
+    font-size: 0.7rem;
+}
+
+h6{
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: ease-in-out 150ms;
+}

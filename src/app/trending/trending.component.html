@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <h3>Trending</h3>
+    </div>
+    <div class="row">
+        <div *ngFor="let movie of nowPlaying" class="col-sm-6 col-md-3 col-lg-2 my-2">
+            <div  class="card h-100 border-0 shadow-sm">
+                <img src="https://image.tmdb.org/t/p/w300/{{movie.imgUrl}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6><a href="" [routerLink]="['movie',movie.id]">{{movie.title}}</a></h6>
+                  <p>{{movie.release | date:'y'}}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

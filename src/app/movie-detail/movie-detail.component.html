@@ -1,0 +1,24 @@
+<section>
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-4 mb-2">
+        <img class="img-fluid rounded shadow-lg poster" src="https://image.tmdb.org/t/p/w300/{{movieDetails.poster_path}}" alt="">
+      </div>
+  
+      <div class="col-md-8">
+        <div class="movie-details p-2">
+          <h2 class="mb-4">{{movieDetails.title}}</h2>
+          <p class="lead mb-3">{{movieDetails.overview}}</p>
+          <p><strong>Release Date:</strong> {{movieDetails.release_date}}</p>
+          <p><strong>Rating:</strong> {{movieDetails.vote_average | number: '1.1-2' }}/10</p>
+          <!-- Add more movie details here if needed -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <app-comments></app-comments>
+    </div>
+
+  </div>
+</section>
