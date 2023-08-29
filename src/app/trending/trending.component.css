@@ -13,4 +13,6 @@ h6{
 .card:hover {
     transform: scale(1.03);
     transition: ease-in-out 150ms;
+
 }
+

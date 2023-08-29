@@ -32,7 +32,7 @@ export class AllMoviesService {
 
   nowPlayingMovies():Observable<MResults[]>{
     return this.http.get<MResponse>(baseUrl + 'now_playing', { headers: myheaders }).pipe(
-      map((res:any)=>{
+      map((res:MResponse)=>{
         return res.results.map((movie:any)=>{
             return {
               id:movie.id,
