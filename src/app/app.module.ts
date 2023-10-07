@@ -12,6 +12,7 @@ import { AllMoviesService } from './services/all-movies.service';
 import { ProfileComponent } from './profile/profile.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { CommentsComponent } from './comments/comments.component';
+import { MovieDetailsService } from './services/movie-details.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { CommentsComponent } from './comments/comments.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AllMoviesService],
+  providers: [AllMoviesService,MovieDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
