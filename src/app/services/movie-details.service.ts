@@ -18,7 +18,7 @@ export class MovieDetailsService {
 
 
   // for passing the movie data to the favourite page (selected data should  pass to the favourites.)
-  // learn how this is working what is behavour subject here? refer-ts of favs,details and the movdetails service
+  // behavour subject? ref-ts of favs,details and the movdetails service
   private selectedMovieSource = new BehaviorSubject<any>(null);
   selectedMovie$ = this.selectedMovieSource.asObservable();
 
