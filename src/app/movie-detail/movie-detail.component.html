@@ -10,6 +10,8 @@
           <p class="lead mb-3">{{movieDetails.overview}}</p>
           <p><strong>Release Date:</strong> {{movieDetails.release_date}}</p>
           <p><strong>Rating:</strong> {{movieDetails.vote_average | number: '1.1-2' }}/10</p>
+
+          <button class="btn btn-sm btn-warning" (click)="addToFav()">Add to Favourites</button>
           <!-- Add more movie details here if needed -->
         </div>
       </div>

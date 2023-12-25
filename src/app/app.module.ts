@@ -13,6 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { CommentsComponent } from './comments/comments.component';
 import { MovieDetailsService } from './services/movie-details.service';
+import { FavouritesComponent } from './favourites/favourites.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MovieDetailsService } from './services/movie-details.service';
     ProfileComponent,
     MovieDetailComponent,
     CommentsComponent,
+    FavouritesComponent,
   ],
   imports: [
     BrowserModule,
